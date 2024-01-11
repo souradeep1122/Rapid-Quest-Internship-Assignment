@@ -1,4 +1,4 @@
-@media (min-width: 330px) and (max-width: 480px) {
+@media  (max-width: 580px) {
   :root {
     --greyColor: rgb(163, 162, 162);
     --blueColor: rgb(31, 0, 154);
