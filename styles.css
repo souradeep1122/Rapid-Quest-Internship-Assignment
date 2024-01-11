@@ -328,8 +328,8 @@ body {
 /*cicular progroess*/
 .progress-circle {
   position: relative;
-  width: 70px; /* Adjust the container size */
-  height: 70px; /* Adjust the container size */
+  width: 70px; 
+  height: 70px; 
   margin: 20px;
   text-align: center;
 }
@@ -340,7 +340,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 14px; /* Adjust the font size */
+  font-size: 14px; 
 }
 
 .svg {
@@ -350,14 +350,14 @@ body {
 .bg {
   fill: none;
   stroke: #ddd;
-  stroke-width: 5; /* Adjust the stroke width */
+  stroke-width: 5; 
 }
 
 .progress {
   fill: none;
   stroke: #4caf50;
-  stroke-width: 8; /* Adjust the stroke width */
-  stroke-dasharray: 65.97; /* Adjust the dash array for the circle */
+  stroke-width: 8; 
+  stroke-dasharray: 65.97; 
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 1s ease;
 }
