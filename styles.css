@@ -9,6 +9,10 @@
 :root {
   --greyColor: rgb(163, 162, 162);
   --blueColor: rgb(31, 0, 154);
+  --backGrndColor: rgb(231, 231, 231);
+}
+.mobile{
+  display: none;
 }
 html,
 body {
@@ -23,10 +27,10 @@ body {
 /*coloum1 section*/
 .coloum1 {
   color: var(--greyColor);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 
   width: 5vw;
-  height: 100vh;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +77,7 @@ body {
 /*coloum2 section*/
 .coloum2 {
   width: 30vw;
-  background-color: rgb(231, 231, 231);
+  background-color: var(--backGrndColor);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -193,6 +197,7 @@ body {
 
 .colm3Div4 {
   display: flex;
+  
   flex-direction: column;
   gap: 5px;
 }
@@ -203,10 +208,27 @@ body {
   font-size: 0.9vw;
   color: var(--greyColor);
 }
+.colm3Div4Botm{
+  display: flex;
+ 
+  flex-direction: row;
+}
 .colm3Div4Left {
   display: flex;
+  
+  width: 2000px;
+ 
   flex-direction: column;
   gap: 5px;
+}
+.colm3Div4Right{
+  display: flex;
+  width: 400px;
+  flex-direction: row;
+ 
+  
+ 
+  gap: 1px;
 }
 .colm3Div4Left .dtls {
   font-size: 1.1vw;
@@ -220,6 +242,7 @@ body {
 /*coloum4 section*/
 .coloum4 {
   width: 25vw;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -300,4 +323,41 @@ body {
 .colmBot a{
   text-decoration: none;
   font-size: 0.9vw;
+}
+
+/*cicular progroess*/
+.progress-circle {
+  position: relative;
+  width: 70px; /* Adjust the container size */
+  height: 70px; /* Adjust the container size */
+  margin: 20px;
+  text-align: center;
+}
+
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px; /* Adjust the font size */
+}
+
+.svg {
+  transform: rotate(-90deg);
+}
+
+.bg {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 5; /* Adjust the stroke width */
+}
+
+.progress {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 8; /* Adjust the stroke width */
+  stroke-dasharray: 65.97; /* Adjust the dash array for the circle */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s ease;
 }
